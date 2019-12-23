@@ -32,7 +32,7 @@ public class TileClass
         var total = neighbours.Length;
         for (var i = 0; i < total; i ++)
         {
-            if (neighbours[1] != null)
+            if (neighbours[i] != null)
             {
                 if (neighbours[i].id == tile.id)
                 {
@@ -49,11 +49,18 @@ public class TileClass
         for (var i = 0; i < total; i ++)
         {
             var tile = neighbours[i];
+            if (tile != null)
+            {
+                tile.RemoveNeighbour(this);
+                neighbours[i] = null;
+            }
         }
+
+        CalculateAutotileID();
     }
 
     private void CalculateAutotileID()
-    {
+    {			
         var sideValues = new StringBuilder();
 
         foreach (TileClass tile in neighbours)

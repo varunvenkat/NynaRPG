@@ -16,34 +16,89 @@ public class RandomMapTester : MonoBehaviour
 
     [Space]
     [Header("Map Sprites")]
-
     public Texture2D islandTexture;
 
+    [Space]
+    [Header("Player")]
+    public GameObject playerPrefab;
+    public GameObject player;
+
+    [Space]
+    [Header("Decorate Map")]
+    [Range(0, 0.9f)]
+    public float erodePercent = 0.5f;
+    [Range(0, 0.9f)]
+    public float treePercent = 0.3f;
+    [Range(0, 0.9f)]
+    public float hillPercent = 0.2f;
+    [Range(0, 0.9f)]
+    public float mountainPercent = 0.1f;
+    [Range(0, 0.9f)]
+    public float townPercent = 0.05f;
+    [Range(0, 0.9f)]
+    public float kingdomPercent = 0.05f;
+    [Range(0, 0.9f)]
+    public float dungeonPercent = 0.05f;
+    [Range(0, 0.9f)]
+    public float lakePercent = 0.05f;
+
+    public int erodeIterations = 2;
+
     public MapClass map;
+    private int tmpX;
+    private int tmpY;
+
 
     void Start()
     {
         map = new MapClass();
+        MakeMap();
+        StartCoroutine(AddPlayer());
+    }
+
+    IEnumerator AddPlayer()
+    {
+        yield return new WaitForEndOfFrame();
+        CreatePlayer();
+    }
+
+    void FixedUpdate()
+    {
+        if (Input.GetButtonDown("Fire1"))
+        {
+            MakeMap();
+        }
     }
 
     public void MakeMap()
     {
         map.NewMap(mapWidth, mapHeight);
-        Debug.Log("Created a new Map of " + map.columns + " x " + map.rows + " dimension");
+        map.CreateIsland(
+            erodePercent,
+            erodeIterations,
+            treePercent,
+            hillPercent,
+            mountainPercent,
+            townPercent,
+            kingdomPercent,
+            dungeonPercent,
+            lakePercent
+        );
         CreateGrid();
+        CenterMap(map.castleTile.id);
     }
 
     void CreateGrid()
     {
         ClearMapContainer();
 
-        Sprite[] sprites = Resources.LoadAll<Sprite> (islandTexture.name);
+        Sprite[] sprites = Resources.LoadAll<Sprite>(islandTexture.name);
         var total = map.tiles.Length;
         var maxColumns = map.columns;
         var column = 0;
         var row = 0;
 
-        for(var i = 0; i < total; i++)
+        for (var i = 0; i < total; i++)
         {
             column = i % maxColumns;
 
@@ -66,17 +121,43 @@ public class RandomMapTester : MonoBehaviour
 
             if (column == (maxColumns - 1))
             {
-                row ++;
+                row++;
             }
         }
+    }
 
-        void ClearMapContainer(){
-            var children = mapContainer.transform.GetComponentsInChildren<Transform>();
+    public void CreatePlayer()
+{
+        player = Instantiate(playerPrefab);
+        player.name = "Player";
+        player.transform.SetParent(mapContainer.transform);
 
-            for (var i = children.Length - 1; i < 0; i--)
+        var controller = player.GetComponent<MapMovementController>();
+        controller.map = map;
+        controller.tileSize = tileSize;
+        controller.MoveTo(map.castleTile.id);
+
+}
+
+    void ClearMapContainer(){
+        var children = mapContainer.transform.GetComponentsInChildren<Transform>();
+
+            for (var i = children.Length - 1; i > 0; i--)
             {
                 Destroy(children[i].gameObject);
             }
         }
+    
+
+    void CenterMap(int index)
+    {
+        var camPos = Camera.main.transform.position;
+        var width = map.columns;
+
+        PosUtil.CalculatePos(index, width, out tmpX, out tmpY);
+
+        camPos.x = tmpX * tileSize.x;
+        camPos.y = -tmpY * tileSize.y;         
+        Camera.main.transform.position = camPos;
     }
 }

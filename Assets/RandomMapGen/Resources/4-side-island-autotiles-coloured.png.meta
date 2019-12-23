@@ -1,0 +1,632 @@
+fileFormatVersion: 2
+guid: b31376871f63037409d903cb3552e1d4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6949212230047649814
+    second: 4-side-island-autotiles-coloured_0
+  - first:
+      213: -6914808981674713129
+    second: 4-side-island-autotiles-coloured_1
+  - first:
+      213: 723051890802080811
+    second: 4-side-island-autotiles-coloured_2
+  - first:
+      213: 3284439004932452021
+    second: 4-side-island-autotiles-coloured_3
+  - first:
+      213: -5217710361011766141
+    second: 4-side-island-autotiles-coloured_4
+  - first:
+      213: 254426578341803627
+    second: 4-side-island-autotiles-coloured_5
+  - first:
+      213: -2628899401841240067
+    second: 4-side-island-autotiles-coloured_6
+  - first:
+      213: 2191083237769841216
+    second: 4-side-island-autotiles-coloured_7
+  - first:
+      213: -4489589915448251251
+    second: 4-side-island-autotiles-coloured_8
+  - first:
+      213: 4209706153625285966
+    second: 4-side-island-autotiles-coloured_9
+  - first:
+      213: -5150412676666357582
+    second: 4-side-island-autotiles-coloured_10
+  - first:
+      213: 2841770809795577485
+    second: 4-side-island-autotiles-coloured_11
+  - first:
+      213: 5181602324659937948
+    second: 4-side-island-autotiles-coloured_12
+  - first:
+      213: 7115093788149603417
+    second: 4-side-island-autotiles-coloured_13
+  - first:
+      213: 8087142914576161459
+    second: 4-side-island-autotiles-coloured_14
+  - first:
+      213: 1572137915500812709
+    second: 4-side-island-autotiles-coloured_15
+  - first:
+      213: 8935277369217313856
+    second: 4-side-island-autotiles-coloured_16
+  - first:
+      213: 8595225273984858551
+    second: 4-side-island-autotiles-coloured_17
+  - first:
+      213: 8263706545717044739
+    second: 4-side-island-autotiles-coloured_18
+  - first:
+      213: 6291812808857179142
+    second: 4-side-island-autotiles-coloured_19
+  - first:
+      213: -97451150249298724
+    second: 4-side-island-autotiles-coloured_20
+  - first:
+      213: -6016552762823017055
+    second: 4-side-island-autotiles-coloured_21
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_0
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c7ce1ca16ec00b45bea2ffcb7412117
+      internalID: -6949212230047649814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_1
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c4bd2ce7cf3ca941a24f38ead18e2d0
+      internalID: -6914808981674713129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_2
+      rect:
+        serializedVersion: 2
+        x: 38
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ee442777e010d8438eaeca51bc55949
+      internalID: 723051890802080811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68d2fa6efbbb864449ed57aaece5b916
+      internalID: 3284439004932452021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_4
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a57e2631719928418fc511424f37306
+      internalID: -5217710361011766141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_5
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce2dcae6f6f05fe499cfba9f3cc766e8
+      internalID: 254426578341803627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_6
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c09aee96ff29b438485cdaa6fa5916
+      internalID: -2628899401841240067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cedd89d14ea09ac4dae61203a734874e
+      internalID: 2191083237769841216
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_8
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2081423b4440a443a3d3b295734cf26
+      internalID: -4489589915448251251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_9
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e4e0cee60e3f342b4f007778a7918b
+      internalID: 4209706153625285966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_10
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163d5277fb0234b4b98d1305c1542eb3
+      internalID: -5150412676666357582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31872f58c7644b0478f7c6d8ac519f9e
+      internalID: 2841770809795577485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_12
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 510faae96b1c2234bb22f9ff56639b51
+      internalID: 5181602324659937948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_13
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 696f165b0108a00469fc81aad5f975a2
+      internalID: 7115093788149603417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_14
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60c66b8e4ee3bb34183404df3db1270c
+      internalID: 8087142914576161459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_15
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 555cf323acf70b845a0a4ff171cfc32c
+      internalID: 1572137915500812709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_16
+      rect:
+        serializedVersion: 2
+        x: 290
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a039a76709f98a449fe000e777100de
+      internalID: 8935277369217313856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_17
+      rect:
+        serializedVersion: 2
+        x: 308
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab3fa966a3a693e4aa0b01652c38ec83
+      internalID: 8595225273984858551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_18
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d296dc8c02c30f94b977517108e8d320
+      internalID: 8263706545717044739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_19
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f2f8664d4b2e344afbea4cf6901b05
+      internalID: 6291812808857179142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_20
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc70613f566d7604399b1c3c974746b4
+      internalID: -97451150249298724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4-side-island-autotiles-coloured_21
+      rect:
+        serializedVersion: 2
+        x: 380
+        y: 2
+        width: 16
+        height: 16
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7508132652015dd438d54dfe67be4693
+      internalID: -6016552762823017055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
