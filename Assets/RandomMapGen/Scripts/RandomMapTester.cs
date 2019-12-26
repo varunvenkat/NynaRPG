@@ -22,6 +22,7 @@ public class RandomMapTester : MonoBehaviour
     [Header("Player")]
     public GameObject playerPrefab;
     public GameObject player;
+    public int onTileType = 20;
 
     [Space]
     [Header("Decorate Map")]
@@ -136,8 +137,16 @@ public class RandomMapTester : MonoBehaviour
         controller.map = map;
         controller.tileSize = tileSize;
         controller.MoveTo(map.castleTile.id);
+        controller.tileActionCallback += TileActionCallback;
 
+        var moveScript = Camera.main.GetComponent<MoveCamera>();
+        moveScript.target = player;
 }
+
+    void TileActionCallback(int type)
+    {
+        onTileType = type;
+    }
 
     void ClearMapContainer(){
         var children = mapContainer.transform.GetComponentsInChildren<Transform>();

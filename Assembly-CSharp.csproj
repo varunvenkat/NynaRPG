@@ -59,6 +59,7 @@
      <Compile Include="Assets\RandomMapGen\Scripts\MapMovementController.cs" />
      <Compile Include="Assets\RandomMapGen\Scripts\MoveCamera.cs" />
      <Compile Include="Assets\RandomMapGen\Scripts\PixelPerfectCamera.cs" />
+     <Compile Include="Assets\RandomMapGen\Scripts\Player.cs" />
      <Compile Include="Assets\RandomMapGen\Scripts\PosUtil.cs" />
      <Compile Include="Assets\RandomMapGen\Scripts\RandomMapTester.cs" />
      <Compile Include="Assets\RandomMapGen\Scripts\Tile.cs" />
