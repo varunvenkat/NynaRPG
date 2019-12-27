@@ -367,6 +367,7 @@ MonoBehaviour:
     type: 3}
   tileSize: {x: 16, y: 16}
   islandTexture: {fileID: 2800000, guid: b31376871f63037409d903cb3552e1d4, type: 3}
+  fowTexture: {fileID: 2800000, guid: 833d9524795203e4f9ed8ced8ce75611, type: 3}
   playerPrefab: {fileID: 2827428526931425202, guid: a4cc1e29e956cc34e9fcd238a7d3512f,
     type: 3}
   player: {fileID: 0}
