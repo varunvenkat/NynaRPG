@@ -24,6 +24,7 @@ public class RandomMapTester : MonoBehaviour
     public GameObject playerPrefab;
     public GameObject player;
     public int onTileType = 20;
+    public int distance = 3;    
 
     [Space]
     [Header("Decorate Map")]
@@ -57,6 +58,11 @@ public class RandomMapTester : MonoBehaviour
         islandTileSprites = Resources.LoadAll<Sprite>(islandTexture.name);
         fowTileSprites = Resources.LoadAll<Sprite>(fowTexture.name);
 
+        Reset();   
+    }
+
+    public void Reset()
+    {
         map = new MapClass();
         MakeMap();
         StartCoroutine(AddPlayer());
@@ -133,8 +139,17 @@ public class RandomMapTester : MonoBehaviour
         if (spriteID >= 0)
         {
             var sr = go.GetComponent<SpriteRenderer>();
-            sr.sprite = islandTileSprites[spriteID];
+            if (tile.visited)
+            {
+                sr.sprite = islandTileSprites[spriteID];
+            }
+            else
+            {
+                tile.CalculateFoWAutotileID();
+                sr.sprite = fowTileSprites[Mathf.Min(tile.fowAutotileID, fowTileSprites.Length - 1)];
+            }
         }
+        
     }
 
     public void CreatePlayer()
@@ -146,16 +161,19 @@ public class RandomMapTester : MonoBehaviour
         var controller = player.GetComponent<MapMovementController>();
         controller.map = map;
         controller.tileSize = tileSize;
-        controller.MoveTo(map.castleTile.id);
         controller.tileActionCallback += TileActionCallback;
 
         var moveScript = Camera.main.GetComponent<MoveCamera>();
         moveScript.target = player;
-}
+
+        controller.MoveTo(map.castleTile.id);
+    }
 
     void TileActionCallback(int type)
     {
         onTileType = type;
+        var tileID = player.GetComponent<MapMovementController>().currentTile;
+        VisitTile(tileID);
     }
 
     void ClearMapContainer(){
@@ -178,5 +196,53 @@ public class RandomMapTester : MonoBehaviour
         camPos.x = tmpX * tileSize.x;
         camPos.y = -tmpY * tileSize.y;         
         Camera.main.transform.position = camPos;
+    }
+
+    void VisitTile(int index)
+    {
+        int column, newX, newY, row = 0;
+
+        PosUtil.CalculatePos(index, map.columns, out tmpX, out tmpY);
+
+        var half = Mathf.FloorToInt(distance / 2f);
+        tmpX -= half;
+        tmpY -= half;
+
+        var total = distance * distance;
+        var maxColumns = distance - 1;
+
+        for (int i = 0; i < total; i++)
+        {
+            column = i % distance;
+
+            newX = column + tmpX;
+            newY = row + tmpY;
+
+            PosUtil.CalculateIndex(newX, newY, map.columns, out index);
+
+            if (index > -1 && index < map.tiles.Length)
+            {
+                var tile = map.tiles[index];
+                tile.visited = true;
+                DecorateTile(index);
+
+                foreach (var neighbour in tile.neighbours)
+                {
+                    if (neighbour != null)
+                    {
+                        if (!neighbour.visited)
+                        {
+                            neighbour.CalculateFoWAutotileID();
+                            DecorateTile(neighbour.id);
+                        }
+                    }
+                }
+            }
+            if (column == maxColumns)
+            {
+                row ++;
+            }
+        }
+
     }
 }

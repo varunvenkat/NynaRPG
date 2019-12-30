@@ -71,7 +71,7 @@ public class TileClass
 
         autotileID = Convert.ToInt32(sideValues.ToString(), 2);
     }
-    private void CalculateFoWAutotileID()
+    public void CalculateFoWAutotileID()
     {
         var sideValues = new StringBuilder();
 
